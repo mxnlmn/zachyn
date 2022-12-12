@@ -5,17 +5,25 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
 }
 
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 2em 2em;
-  padding-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  padding: .5em 0;
+}
+
+.logo {
+  width: 64px;
 }
 
 nav {
@@ -30,6 +38,7 @@ nav {
   display: -ms-grid;
   display: grid;
   gap: 2em;
+  background-color: #333;
 }
 
 .hero__main {
@@ -41,15 +50,35 @@ nav {
 }
 
 .hero__article {
-  border: 2px solid #cecece;
+  border: 2px solid whitesmoke;
   border-radius: 1em;
   padding: .5em;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5em;
 }
 
 .hero__article img {
   border-radius: 1em;
   width: 100%;
+}
+
+.hero__article-title {
+  font-size: 1.5em;
+  letter-spacing: .1px;
+  line-height: 1.1em;
+}
+
+.hero__article-date {
+  font-weight: 400;
+  font-size: 10px;
+  color: grey;
 }
 
 .hero__sidebar {
